@@ -52,6 +52,8 @@ namespace CustomerSupport
 
             services.AddTransient<ITicketService, TicketService>();
             services.AddTransient<ITicketRepository, TicketRepository>();
+            services.AddTransient<ICommentRepository, CommentRepository>();
+            services.AddTransient<ICommentService, CommentService>();
 
         }
 

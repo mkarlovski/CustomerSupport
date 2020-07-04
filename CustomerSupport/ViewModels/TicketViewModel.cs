@@ -23,5 +23,8 @@ namespace CustomerSupport.ViewModels
         public StatusEnum Status { get; set; }
         
         public string ClientId { get; set; }
+        public string UserEmail { get; set; }
+        public List<Comment> Comments { get; set; }
+
     }
 }

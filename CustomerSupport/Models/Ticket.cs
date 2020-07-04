@@ -22,5 +22,8 @@ namespace CustomerSupport.Models
         public StatusEnum Status { get; set; }
         public IdentityUser Client { get; set; }
         public string ClientId { get; set; }
+        public bool IsDeleted { get; set; }
+        public List<Comment> Comments { get; set; }
+
     }
 }
