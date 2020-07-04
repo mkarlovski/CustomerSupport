@@ -1,0 +1,17 @@
+﻿@model CustomerSupport.ViewModels.CreateViewModel
+@{
+    ViewData["Title"] = "AddTicket";
+}
+
+<h1>AddTicket</h1>
+
+<form asp-controller="Ticket" asp-action="AddTicket" method="post">
+    <input placeholder="Ticket Title" asp-for="@Model.Title" class="form-control" />
+    <br />
+    <textarea placeholder="Ticket Message" asp-for="@Model.Message" class="form-control"></textarea>
+    <br />
+    <input type="submit" value="Create" class="btn btn-primary" />
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    
+</form>
